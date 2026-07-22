@@ -1,0 +1,38 @@
+START
+
+Initialize Jug1 capacity = X
+Initialize Jug2 capacity = Y
+Target = Z
+
+Create an empty queue
+Insert initial state (0, 0)
+Mark (0, 0) as visited
+
+WHILE queue is not empty DO
+    Remove current state (a, b)
+
+    IF a = Target OR b = Target THEN
+        Print "Target reached"
+        STOP
+    END IF
+
+    Generate all possible next states:
+        1. Fill Jug1
+        2. Fill Jug2
+        3. Empty Jug1
+        4. Empty Jug2
+        5. Pour Jug1 → Jug2
+        6. Pour Jug2 → Jug1
+
+    FOR each new state DO
+        IF state is not visited THEN
+            Mark as visited
+            Insert into queue
+        END IF
+    END FOR
+
+END WHILE
+
+Print "No solution exists"
+
+STOP
