@@ -1,0 +1,23 @@
+START
+
+Create priority queue
+Insert source node with f(n) = g(n) + h(n)
+
+WHILE queue is not empty DO
+    Remove node with lowest f(n)
+
+    IF node is goal THEN
+        Print path
+        STOP
+    END IF
+
+    FOR each neighbour DO
+        Compute:
+            g = path cost
+            h = heuristic
+            f = g + h
+        Insert neighbour into queue
+    END FOR
+END WHILE
+
+STOP
