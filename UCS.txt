@@ -1,0 +1,20 @@
+START
+
+Create a priority queue
+Insert source node with cost 0
+
+WHILE priority queue is not empty DO
+    Remove node with minimum cost
+
+    IF node is goal THEN
+        Print solution
+        STOP
+    END IF
+
+    FOR each neighbour DO
+        Calculate new cost
+        Insert neighbour with new cost
+    END FOR
+END WHILE
+
+STOP
