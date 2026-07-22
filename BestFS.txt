@@ -1,0 +1,17 @@
+START
+
+Create a priority queue
+Insert source node based on heuristic value
+
+WHILE queue is not empty DO
+    Remove node with smallest heuristic
+    Print node
+
+    IF node is goal THEN
+        STOP
+    END IF
+
+    Add all unvisited neighbours to queue
+END WHILE
+
+STOP
