@@ -1,0 +1,16 @@
+START
+
+DFS(node)
+    Mark node as visited
+    Print node
+
+    FOR each adjacent node DO
+        IF node is not visited THEN
+            DFS(adjacent node)
+        END IF
+    END FOR
+END DFS
+
+Call DFS(source node)
+
+STOP
