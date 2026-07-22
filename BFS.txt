@@ -1,0 +1,20 @@
+START
+Create an empty queue
+Create an empty visited set
+
+Insert source node into queue
+Mark source node as visited
+
+WHILE queue is not empty DO
+    Remove front node from queue
+    Print node
+
+    FOR each adjacent node DO
+        IF node is not visited THEN
+            Mark it as visited
+            Insert it into queue
+        END IF
+    END FOR
+END WHILE
+
+STOP
