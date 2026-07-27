@@ -1,0 +1,23 @@
+START
+
+Read the leaf node values
+
+Define Minimax(depth, node, isMax)
+
+IF depth is equal to maximum depth
+    RETURN leaf node value
+
+IF isMax is TRUE
+    RETURN maximum of
+        Minimax(left child, FALSE)
+        Minimax(right child, FALSE)
+ELSE
+    RETURN minimum of
+        Minimax(left child, TRUE)
+        Minimax(right child, TRUE)
+
+Call Minimax(0, root, TRUE)
+
+Display the optimal value
+
+STOP
