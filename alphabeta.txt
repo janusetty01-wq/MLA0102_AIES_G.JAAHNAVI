@@ -1,0 +1,30 @@
+START
+
+Read the leaf node values
+
+Define AlphaBeta(depth, node, isMax, alpha, beta)
+
+IF depth is equal to maximum depth
+    RETURN leaf node value
+
+IF isMax is TRUE
+    FOR each child
+        Compute child value
+        Update alpha
+        IF beta <= alpha
+            Stop exploring remaining children
+    RETURN best value
+
+ELSE
+    FOR each child
+        Compute child value
+        Update beta
+        IF beta <= alpha
+            Stop exploring remaining children
+    RETURN best value
+
+Call AlphaBeta(root, TRUE, -∞, +∞)
+
+Display the optimal value
+
+STOP
