@@ -1,0 +1,22 @@
+START
+
+Read N (number of disks)
+
+Procedure HANOI(N, Source, Auxiliary, Destination)
+
+IF N = 1 THEN
+    Print "Move Disk 1 from Source to Destination"
+    RETURN
+END IF
+
+HANOI(N-1, Source, Destination, Auxiliary)
+
+Print "Move Disk N from Source to Destination"
+
+HANOI(N-1, Auxiliary, Source, Destination)
+
+END Procedure
+
+Call HANOI(N, A, B, C)
+
+STOP
