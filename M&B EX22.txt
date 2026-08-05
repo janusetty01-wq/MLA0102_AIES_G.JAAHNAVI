@@ -1,0 +1,28 @@
+BEGIN
+
+1. Set Robot = A
+2. Set Box = B
+3. Set Banana = C
+4. Set HasBanana = False
+
+5. IF Robot ≠ Box THEN
+      Move Robot to Box
+      Robot ← Box
+   END IF
+
+6. IF Box ≠ Banana THEN
+      Push Box to Banana
+      Box ← Banana
+      Robot ← Banana
+   END IF
+
+7. Climb the Box
+
+8. Pick the Banana
+   HasBanana ← True
+
+9. IF HasBanana = True THEN
+      Display "Goal Achieved! Robot has retrieved the Banana."
+   END IF
+
+END
