@@ -1,0 +1,17 @@
+BEGIN
+
+Read N
+
+FUNCTION Sum(N)
+    IF N = 1 THEN
+        RETURN 1
+    ELSE
+        RETURN N + Sum(N - 1)
+    END IF
+END FUNCTION
+
+Result ← Sum(N)
+
+Display "Sum of first", N, "natural numbers is:", Result
+
+END
