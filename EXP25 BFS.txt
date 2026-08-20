@@ -1,0 +1,32 @@
+START
+
+1. Define the graph with nodes and edges.
+
+2. Assign a heuristic value h(n) to each node.
+
+3. Set the starting node and goal node.
+
+4. Add the starting node to the OPEN list.
+
+5. Select the node with the lowest heuristic value.
+
+6. If the selected node is the goal:
+      Store the path.
+      Go to Step 9.
+
+7. Otherwise:
+      Find its neighboring nodes.
+      Add the unvisited neighbors to the OPEN list.
+      Repeat from Step 5.
+
+8. Continue until the goal is reached.
+
+9. Calculate the overall heuristic value:
+      Total H = Sum of heuristic values
+                of all nodes in the final path.
+
+10. Display:
+      Best Path
+      Overall Heuristic Value
+
+END
