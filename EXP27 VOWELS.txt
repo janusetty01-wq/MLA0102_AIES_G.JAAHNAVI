@@ -1,0 +1,18 @@
+START
+
+1. Define rules for vowels:
+      a, e, i, o, u
+
+2. Read the sentence.
+
+3. Check each character.
+
+4. IF character is a vowel:
+      Display "Vowel".
+
+5. ELSE:
+      Ignore the character.
+
+6. Repeat until all characters are checked.
+
+END
